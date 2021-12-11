@@ -15,7 +15,7 @@ public class HardwareMapping
     /* Public OpMode members. */
     public DcMotor  leftMotor   = null;
     public DcMotor  rightMotor  = null;
-    public CRServo  carouselServo = null;
+    public DcMotor  carouselMotor = null;
 
     public BNO055IMU imu = null;
 
@@ -34,8 +34,8 @@ public class HardwareMapping
 
         // Define and Initialize Motors
         leftMotor = setupMotor("leftMotor", DcMotor.Direction.REVERSE, 0, true,true);
-        rightMotor = setupMotor("rightFrontMotor", DcMotor.Direction.FORWARD, 0, true,true);
-        carouselServo = setupCRServo("carouselServo",  0);
+        rightMotor = setupMotor("rightMotor", DcMotor.Direction.FORWARD, 0, true,true);
+        carouselMotor = setupMotor("carouselMotor",  0);
 //        intakeServo1 = setupServo("intakeServo1", 0);
 //        clawServo = setupServo("clawServo",  0);
 
