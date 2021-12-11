@@ -16,7 +16,7 @@ public class MainTeleOp extends LinearOpMode {
         // Make sure your ID's match your configuration
         DcMotor leftMotor = hardwareMap.dcMotor.get("leftMotor");
         DcMotor rightMotor = hardwareMap.dcMotor.get("rightMotor");
-        DcMotor carouselMotor = hardwareMap.crservo.get("carouselMotor");
+        DcMotor carouselMotor = hardwareMap.dcMotor.get("carouselMotor");
 //         DcMotor arm = hardwareMap.dcMotor.get("armMotor");
 //         DcMotor wrist = hardwareMap.dcMotor.get("wristMotor");
 //         Servo intake = hardwareMap.servo.get("intakeServo");
